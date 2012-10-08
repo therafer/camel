@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+gem 'haml-rails'
 
 gem 'rails', '3.2.8'
 gem 'sqlite3'
