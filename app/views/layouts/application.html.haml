@@ -1,0 +1,12 @@
+!!!5
+%html
+  %head
+    %title Camel
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags 
+  %body
+    %h1 They Call Me Camel
+    - ["home", "youtube_videos", "me"].each do |link_name|
+      = link_to link_name, "/#{link_name}"
+    = yield 

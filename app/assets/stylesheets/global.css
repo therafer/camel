@@ -1,0 +1,55 @@
+body{
+ background: gray;
+ color: #5DFC0A;
+}
+
+h1{
+  text-align: left;
+}
+
+h2{
+  text-align: center;
+}
+
+h3{
+  text-align: left;
+}
+
+p{
+  font-family: "Times New Roman", Times, serif;
+}
+
+a{
+  background: ;
+  color: #F0A804;
+  text-decoration: none;
+  text-align: right;
+}
+
+a:link {
+  color:#F0A804;
+}      
+
+a:visited {
+  color:#F0A804;
+}  
+
+a:hover {
+  color:#F0A804;
+  text-decoration: underline;
+}  
+
+a:active {
+  color:#F0A804;
+}  
+
+img{
+  border:5px solid black;
+}
+
+iframe{
+  border:5px solid black;
+  margin-left: ;
+  margin-right: auto ;
+  display: block;
+}
