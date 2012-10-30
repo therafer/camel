@@ -1,0 +1,12 @@
+%h1 Create new contact
+
+= form_for @contact do |f|
+  =f.label :email
+  =f.text_field :email
+
+  =f.submit
+  
+
+%ul
+  - @contacts.each do |c|
+    %li= c.email

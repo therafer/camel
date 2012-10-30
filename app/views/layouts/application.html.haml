@@ -7,6 +7,6 @@
     = csrf_meta_tags 
   %body
     %h1 They Call Me Camel
-    - ["home", "youtube_videos", "me"].each do |link_name|
+    - ["home", "youtube_videos", "me", "contacts/new"].each do |link_name|
       = link_to link_name, "/#{link_name}"
     = yield 
