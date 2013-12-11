@@ -1,12 +1,20 @@
-%h1 Create new contact
+%h2 Create new contact
 
 = form_for @contact do |f|
   =f.label :email
   =f.text_field :email
 
+  =f.label :name
+  =f.text_field :name
+
+  =f.label :phone_number
+  =f.text_field :phone_number
+
   =f.submit
-  
+
 
 %ul
   - @contacts.each do |c|
-    %li= c.email
+    %li= c.full_name 
+    =button_to "delete contact", method: :delete, contacts_path(c)
+
